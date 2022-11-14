@@ -1,0 +1,43 @@
+ul.individual-ability {
+    li {
+        margin: 10% 0;
+        color: #241742;
+
+        font : {
+            size: 1.5rem;
+            weight: bold;
+            style: italic;
+        }
+
+        span {
+            color: #553e8f;
+
+            font : {
+                size: 2em;
+                weight: lighter;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                margin: 10px;
+            }
+        }
+
+        .icon {
+            font-size: 1.5em;
+        }
+
+        &:nth-child(odd) {
+            transform: translateX(-10%);
+        }
+
+        &:nth-child(even) {
+            transform: translateX(10%);
+        }
+
+        &:not(span) {
+            border-bottom: #241742 solid 2px;
+        }
+    }
+}

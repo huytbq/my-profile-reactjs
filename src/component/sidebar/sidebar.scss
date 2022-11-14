@@ -1,0 +1,21 @@
+.sidebar-container {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: #312450;
+    font-size: 0.75em;
+
+    .nav {
+        position: relative;
+        margin: 0 15%;
+        text-align: right;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: bold;
+    }
+
+    .nav ul li {
+        position: relative;
+        margin: 3.2em 0;
+    }
+}

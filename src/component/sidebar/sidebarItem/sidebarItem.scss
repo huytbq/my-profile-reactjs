@@ -1,0 +1,30 @@
+.title {
+    line-height: 5em;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: rgba(#FFF, 0.35);
+    transition: all ease-out 300ms;
+
+    &.active {
+        color: white;
+    }
+
+    &:not(.active)::after {
+        opacity: 0.2;
+    }
+
+    &:not(.active):hover {
+        color: rgba(#FFF, 0.75);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2em;
+        background: black;
+        left: 0;
+        bottom: 0;
+        background-image: linear-gradient(to right, #5e42a6, #b74e91)
+    }
+}
